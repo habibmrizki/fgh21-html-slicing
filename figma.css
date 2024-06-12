@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #f4f7ff;
+  color: black;
+  min-height: 3000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  margin: 0 3rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #2e5de8;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid #2e5de8;
+  padding-bottom: 0.5rem;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  color: black;
+}
+.navbar-brand img {
+  color: black;
+}
+
+/* Section */
+.about {
+  padding: 10rem 7% 1.4rem;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img .heart {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.about .row .about-img {
+  flex: 1 1 15rem;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 3rem;
+}
+
+.about .row .content .H {
+  font-size: 3rem;
+}
+
+.about .row .content .bab1 {
+  margin: 1rem 0;
+}
+
+.about .row .content .bab2 .paragraph {
+  margin-bottom: 1rem;
+}
+
+.about .row .content .bab3 img {
+  width: 100%;
+}
+
+.about .row .content .bab4 .paragraph2 {
+  margin-top: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about .row .content .bab4 .link {
+  font-size: 1rem;
+  color: #2e5de8;
+}
+
+.about .row .content .bab5 .h1 {
+  margin-top: 2rem;
+}
+
+.about .row .content .bab5 .map {
+  margin-top: 1rem;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.about .row .content .button {
+  width: 39%;
+  color: white;
+  background-color: #3366ff;
+  margin-top: 2rem;
+  height: 2.5rem;
+  border-radius: 15px;
+}
