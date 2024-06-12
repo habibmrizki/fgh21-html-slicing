@@ -1,0 +1,54 @@
+.table {
+  width: 100%;
+}
+
+body {
+  min-height: 4000px;
+  margin: -1px;
+  padding: -1px;
+}
+
+.tittle {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.table .left,
+.table .rigth {
+  height: 100vh;
+  width: 60%;
+}
+.left {
+  background-color: #3366ff;
+  background-image: url(/img/Group\ 12.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right {
+  background-color: white;
+}
+
+.input-wrapper {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.input-wrapper input,
+.button {
+  width: 50%;
+  border-radius: 15px;
+  height: 40px;
+  border: 1px solid rgb(192, 190, 190);
+  padding: 0 1rem;
+}
+
+.button {
+  width: 56%;
+  color: white;
+  background-color: #3366ff;
+  margin-top: 2rem;
+  height: 2.5rem;
+  border-radius: 15px;
+}
