@@ -4,8 +4,8 @@
 
 body {
   min-height: 4000px;
-  margin: -1px;
-  padding: -1px;
+  margin: -2px;
+  padding: -2px;
 }
 
 .tittle {
@@ -36,7 +36,7 @@ body {
 }
 
 .input-wrapper input,
-.button {
+button {
   width: 50%;
   border-radius: 15px;
   height: 40px;
@@ -45,7 +45,7 @@ body {
 }
 
 .button {
-  width: 56%;
+  width: 20%;
   color: white;
   background-color: #3366ff;
   margin-top: 2rem;
