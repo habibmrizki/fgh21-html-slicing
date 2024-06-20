@@ -29,15 +29,18 @@
         <nav class="navbar">
           <a href="#"><img src="img/logo-Wetick.png" alt="logo-witeck" /></a>
 
-          <div class="navbar-nav">
+          <div class="navbar-nav" id="navbar-nav">
             <a href="#home">Home</a>
             <a href="#create">Create Event</a>
             <a href="#location">Location</a>
           </div>
 
-          <div class="button">
+          <div class="button" id="button">
             <button type="button" class="button1">Log In</button>
             <button type="button" class="button2">Sign Up</button>
+          </div>
+          <div id="hamburger-menu" class="button-hamburger-menu">
+            <i data-feather="menu"></i>
           </div>
         </nav>
         <!-- Navbar Start End -->
@@ -59,6 +62,7 @@
         <!-- bg picture start -->
 
         <!-- date grid start  -->
+
         <div class="content">
           <div class="date-grid">
             <div>
@@ -88,10 +92,34 @@
         <!-- info picture start -->
         <div class="event-box">
           <div class="pic1">
-            <img src="img/Group 5912.png" alt="" />
+            <img src="img/poster1.png" alt="" />
           </div>
           <div class="pic2">
-            <img src="img/Group 5915.png" alt="" />
+            <img src="img/poster2.png" alt="" />
+          </div>
+          <div class="pic3">
+            <img src="img/poster1.png" alt="" />
+          </div>
+          <div class="pic4">
+            <img src="img/poster2.png" alt="" />
+          </div>
+          <div class="pic5">
+            <img src="img/poster1.png" alt="" />
+          </div>
+          <div class="pic6">
+            <img src="img/poster2.png" alt="" />
+          </div>
+        </div>
+        <div class="button-event-box">
+          <div class="button-event-box-left">
+            <a href="">
+              <img src="img/button-left.png" alt="" />
+            </a>
+          </div>
+          <div class="button-event-box-right">
+            <a href="">
+              <img src="img/button-right.png" alt="" />
+            </a>
           </div>
         </div>
         <!-- info picture end -->
@@ -114,49 +142,78 @@
               <h1>Browse Events By Category</h1>
             </div>
           </div>
-          <div class="various-category">
-            <div class="nav-category">
-              <a href="#">Music</a>
+          <div>
+            <div class="various-category">
+              <div class="nav-category">
+                <a href="#">Music</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Arts</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Outdoors</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Workshop</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Sport</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Festival</a>
+              </div>
+              <div class="nav-category">
+                <a href="#">Fashion</a>
+              </div>
             </div>
-            <div class="nav-category">
-              <a href="#">Arts</a>
-            </div>
-            <div class="nav-category">
-              <a href="#">Outdoors</a>
-            </div>
-            <div class="nav-category">
-              <a href="#">Workshop</a>
-            </div>
-            <div class="nav-category">
-              <a href="#">Sport</a>
-            </div>
-            <div class="nav-category">
-              <a href="#">Festival</a>
-            </div>
-            <div class="nav-category">
-              <a href="#">Fashion</a>
+          </div>
+          <div class="content">
+            <div class="content-img">
+              <img src="img/Group 5923.png" alt="" />
             </div>
           </div>
         </div>
         <!-- Category End -->
 
         <!-- GAMBAR START -->
-        <div class="content">
-          <div class="content-img">
-            <img src="img/Group 5923.png" alt="" />
-          </div>
-        </div>
         <!-- GAMBAR End -->
 
         <!-- sponsor start -->
-        <div class="sponsor">
-          <div class="sponsor-img">
-            <img src="img/" alt="" />
+        <div class="bg-sponsor">
+          <div class="bg-sponsor-img1">
+            <img src="img/Ellipse 1.png" alt="" />
+          </div>
+          <div class="bg-sponsor-img2">
+            <img src="img/Ellipse 2.png" alt="" />
+          </div>
+          <div class="bg-sponsor-img3">
+            <img src="img/Ellipse 3.png" alt="" />
+          </div>
+          <div class="partner">
+            <div class="logo-partner">
+              <img src="img/logo-partner.png" alt="" />
+            </div>
+            <div class="text-sponsor">
+              <div class="heading-sponsor">
+                <h1>Our Trusted Partners</h1>
+              </div>
+              <div class="paragraph-sponsor">
+                <p>By companies like :</p>
+              </div>
+              <div class="logo-sponsor">
+                <img src="img/sponsor1.png" alt="" />
+                <img src="img/sponsor2.png" alt="" />
+                <img src="img/sponsor3.png" alt="" />
+                <img src="img/sponsor4.png" alt="" />
+                <img src="img/sponsor5.png" alt="" />
+                <img src="img/sponsor6.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
         <!-- sponsor END -->
 
-        <div class="footer">
+        <footer class="footer">
           <table>
             <tr>
               <td>
@@ -261,7 +318,10 @@
               </tr>
             </table>
           </div>
-        </div>
+        </footer>
+
+        <!-- js -->
+        <script src="script/script.js"></script>
 
         <!-- Feather Icons -->
         <script>

@@ -376,50 +376,6 @@ a.navbar-brand {
   font-size: 18px;
 }
 
-/* MEDIA QUERIES START */
-/* Laptop*/
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-/* Tablet*/
-@media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-  .footer {
-    flex-wrap: wrap;
-  }
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img .vector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 30rem;
-  }
-
-  /* Mobile Phone */
-  @media (max-width: 450px) {
-    html {
-      font-size: 50%;
-    }
-  }
-}
-
-/* Mobile Phone */
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-}
-/* MEDIA QUERIES END*/
-
 /* FIRST MY BOOKING START */
 .profile-name,
 .detail-profile {
@@ -726,7 +682,7 @@ button.button-event {
 
 .date-grid {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .date-grid > div div:first-child {
@@ -755,12 +711,140 @@ button.button-event {
 }
 
 .event-box {
-  width: 260px;
-  height: 376px;
-  background-color: orange;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  margin-top: 30px;
 }
 
+.button-event-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.button-event-box-left,
+.button-event-box-right {
+  background-color: #f4f7ff;
+}
+
+.button-hamburger-menu {
+  display: none;
+}
+
+.button-hamburger-menu {
+  background-color: transparent;
+}
+
+.button-hamburger-menu a {
+  color: black;
+}
+
+/* sampai sini */
+
+.pic-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.category {
+  margin-top: 80px;
+}
+
+.heading-category {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.nav-category a {
+  color: black;
+  margin: 0 3rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.nav-category a:hover {
+  color: #2e5de8;
+}
+
+.nav-category a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid #2e5de8;
+  padding-bottom: 0.5rem;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.nav-category a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.various-category {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+/* sponsor */
+.bg-sponsor {
+  background-color: rgb(45, 44, 44);
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+}
+
+.bg-sponsor-img1 img {
+  position: absolute;
+  padding-top: 30px;
+}
+
+.bg-sponsor-img2 img {
+  position: absolute;
+  padding-top: 340px;
+  padding-left: 560px;
+}
+
+.bg-sponsor-img3 img {
+  position: absolute;
+  padding-left: 80%;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 95px 285px;
+  gap: 15px;
+}
+
+.text-sponsor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo-sponsor {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
 /* PROFILE START */
 .detail-profile-padding {
   padding: 50px;
@@ -897,3 +981,60 @@ button.button-event {
   text-align: start;
   gap: 20px;
 }
+
+/* MEDIA QUERIES START */
+/* Laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img .vector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+  }
+
+  /* Mobile Phone */
+  @media (max-width: 576px) {
+    html {
+      font-size: 50%;
+    }
+
+    .button-hamburger-menu {
+      display: inline-block;
+    }
+
+    .navbar-nav,
+    .button {
+      display: none;
+    }
+
+    .logo-sponsor {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+/* MEDIA QUERIES END*/
