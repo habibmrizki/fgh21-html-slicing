@@ -731,6 +731,10 @@ button.button-event {
   background-color: #f4f7ff;
 }
 
+.button-event-box-left {
+  background-color: transparent;
+}
+
 .button-hamburger-menu {
   display: none;
 }
@@ -741,6 +745,10 @@ button.button-event {
 
 .button-hamburger-menu a {
   color: black;
+}
+
+.bg-sponsor2 {
+  display: none;
 }
 
 /* sampai sini */
@@ -844,6 +852,14 @@ button.button-event {
   flex-direction: row;
   gap: 50px;
   align-items: center;
+}
+
+.logo-sponsor2 {
+  display: none;
+}
+
+.logo-partner-clone {
+  display: none;
 }
 /* PROFILE START */
 .detail-profile-padding {
@@ -993,7 +1009,7 @@ button.button-event {
 /* Tablet*/
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
   .footer {
     flex-wrap: wrap;
@@ -1013,7 +1029,7 @@ button.button-event {
   /* Mobile Phone */
   @media (max-width: 576px) {
     html {
-      font-size: 50%;
+      font-size: 75%;
     }
 
     .button-hamburger-menu {
@@ -1022,17 +1038,49 @@ button.button-event {
 
     .navbar-nav,
     .button {
-      display: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bg-sponsor {
+      height: 650px;
+    }
+
+    .bg-sponsor-img1 img {
+      padding-top: 300px;
+    }
+
+    .bg-sponsor-img3 img {
+      padding-left: 300px;
     }
 
     .logo-sponsor {
+      display: none;
+    }
+
+    .logo-sponsor2 {
       display: flex;
-      justify-content: center;
       flex-direction: row;
-      gap: 50px;
+      justify-content: center;
       align-items: center;
-      flex: 50%;
-      max-width: 50%;
+      gap: 60px;
+    }
+
+    .clone1 {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .clone2 {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
